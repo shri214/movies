@@ -5,6 +5,7 @@ import img4 from "../../images/shaitaan.jpg"
 import img5 from '../../images/abrahm ozler.jpg'
 import img6 from '../../images/godzila.jpg'
 import img7 from '../../images/output.jpg'
+import img8 from '../../images/legend hanuman 2.jpg'
 
 export interface IData {
     image: string;
@@ -100,6 +101,18 @@ export const collectionList=():IData[]=>{
           name:"Sunflower season 2",
           category:"webSeries",
           Cast:"Sunil Grover, Adah Sharma, Ranvir Shorey"
+        }
+      },
+      {
+        image:img8,
+        link:"https://teraboxapp.com/s/1toEvRtxZ2V4sEgiHlHn6zw",
+        id:8,
+        body:{
+          description:`The Legend of Hanuman S03 Hindi ALL Episode Download 720p : When the power-hungry Ravan tore through the world to unleash evil, in his way stood a humble vaanar awoken to his divinity to become an immortal legend.
+          This is the story of a humble vanara who forgot his divinity but was awoken to embrace his true power and wisdom and become an immortal legend. A growing darkness threatens to tear the universe apart and all hope now lies in the journey of a young hero. When Hanuman’s power was taken from him as a child, he must go on a journey of self-discovery to remember the god inside of him. Hanuman’s quest will take him through a vast world of characters, demons, lost cities, cultures and forest beings with their rivalries, alliances and wars. At each stage he and his companions must overcome unthinkable challenges to save all existence. Through their adventures, Hanuman and his companions will once again inspire audiences to learn that the true measure of a hero is not defined from power, but from faith, courage, hope and compassion. This is the legend of Hanuman.—Graphic India`,
+          name:"Legend Hanuman season 2",
+          category:"Anime",
+          Cast:"Vikrant Chaturvedi, Amit Deondi, Richard Joel"
         }
       },
     ]

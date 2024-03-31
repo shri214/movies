@@ -1,4 +1,4 @@
-const url = "https://hotcollection.vercel.app/";
+const url = "https://movies-one-theta.vercel.app/";
 export const handleClick = async () => {
   try {
     if (navigator.share) {

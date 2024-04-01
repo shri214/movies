@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./about.scss";
 import { handleClick } from "../share";
-export const About:React.FC = () => {
+export const About: React.FC = () => {
   return (
     <div className="about">
       <div className="heading1 h-primary">
@@ -12,8 +12,7 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Welcome to HotCollection - Your Destination for Erotic and Romantic
-          Videos
+          Discover the Latest Blockbusters
         </motion.h2>
         <motion.p
           className="p-primary"
@@ -21,11 +20,10 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          At HotCollection, we pride ourselves on providing a sophisticated and
-          tantalizing platform for adults to explore their deepest desires and
-          fantasies. Whether you're seeking a touch of romance, an infusion of
-          passion, or an exploration of your sensual side, you'll find it all
-          right here.
+          Explore New Movies, Web Series, and Anime on Our Website! Dive into a
+          treasure trove of fresh releases across genres, from thrilling action
+          flicks to heartwarming dramas and captivating anime series, all in one
+          convenient platform
         </motion.p>
       </div>
       <div className="mission h-primary">
@@ -35,7 +33,7 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Our Mission
+          Stream Hindi Dubbed Movies
         </motion.h2>
         <motion.p
           className="p-primary"
@@ -43,11 +41,10 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Our mission is simple yet profound: to curate an exclusive collection
-          of erotic, romantic, and adult videos that cater to the diverse tastes
-          and preferences of our discerning audience. We believe in celebrating
-          the beauty of human sensuality and fostering an environment of
-          openness, exploration, and empowerment
+          Enjoy Your Favorite Films in Hindi, Exclusively on Our Website!
+          Experience the magic of cinema in your preferred language with our
+          extensive collection of Hindi-dubbed movies, ensuring entertainment
+          for every viewer.
         </motion.p>
       </div>
       <div className="sensuality h-primary">
@@ -57,7 +54,7 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          A World of Sensuality
+          Stay Up-to-Date with Web Series
         </motion.h2>
         <motion.p
           className="p-primary"
@@ -65,11 +62,10 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Step into a world where pleasure knows no bounds. Our extensive
-          library features a diverse range of content, including sensual
-          romance, steamy erotica, and tantalizing adult videos. From passionate
-          encounters to intimate moments, each video is carefully selected to
-          ignite your imagination and awaken your senses.
+          Never Miss Out on the Hottest Web Series Releases! Keep pace with the
+          latest trends in digital entertainment with our curated selection of
+          web series, featuring compelling storylines and diverse genres to
+          cater to all tastes.
         </motion.p>
       </div>
       <div className="join h-primary">
@@ -79,7 +75,7 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Join Us Today
+          Immerse Yourself in Anime Adventures
         </motion.h2>
         <motion.p
           className="p-primary"
@@ -87,11 +83,10 @@ export const About:React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Ready to embark on a journey of pleasure and discovery? Join us today
-          and experience the thrill of HotCollection for yourself. Whether
-          you're indulging in a solo adventure or exploring with a partner,
-          you'll find endless possibilities awaiting you. Welcome to a world
-          where desire knows no limits. Welcome to HotCollection.
+          Embark on Epic Journeys in the World of Anime! From adrenaline-pumping
+          action to poignant narratives, lose yourself in the mesmerizing realm
+          of anime with our vast library of titles, catering to both seasoned
+          fans and newcomers alike.
         </motion.p>
       </div>
       <div className="other">

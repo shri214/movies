@@ -1,5 +1,4 @@
 import {Collection, DECREMENT, FILTER, INCREMENT, RESET, } from '../action/actionType'
-import { collectionList } from './collectionList';
 import { IData } from './collectionList';
 
   interface ISelectCollectionAction {
@@ -29,20 +28,21 @@ interface IState{
  PageNum:number;
  FilterData:IData[];
 }
-let arr=collectionList()
 
 let initialState={
-  CollectionData: arr,
+  CollectionData: [], 
   PageNum:1,
   FilterData:[]
 }
+
+
 
 type ActionType=ISelectCollectionAction|IIncPageNumAction|IDecPageNumAction|IReset|IFilterCollection
 
 export const  collectionReducer=(state:IState=initialState, action:ActionType)=>{
   switch (action.type) {
     case Collection:
-      console.log("action payload",action.payload);
+      sessionStorage.setItem('arrayOfObjects', JSON.stringify(action.payload));
       return{
         ...state, CollectionData:action.payload
       }
@@ -60,6 +60,7 @@ export const  collectionReducer=(state:IState=initialState, action:ActionType)=>
           ...state, PageNum:action.payload
         }
     case FILTER:
+      
       return{
         ...state, FilterData:action.payload
       }    

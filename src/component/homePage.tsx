@@ -8,6 +8,7 @@ import {
   filter,
   increment,
   reset,
+  selectCollection,
 } from "../Redux/action/actionCreation";
 import { useNavigate } from "react-router-dom";
 import { IData } from "../Redux/reducer/collectionList";
@@ -80,14 +81,24 @@ export const HomePage: React.FC = () => {
   );
   const paginatedResult = paginator.paginate();
 
+  //use effect
+
   useEffect(() => {
-    dispatch(filter(collections.CollectionData));
-    console.log("rerendering done");
+    const storedData = sessionStorage.getItem("arrayOfObjects");
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      console.log("data is taken by session storage", parsedData);
+      dispatch(filter(parsedData));
+    } else {
+      dispatch(selectCollection())
+      dispatch(filter(collections.CollectionData));
+    }
   }, [collections.CollectionData, dispatch]);
 
   if (collections.FilterData.length === 0) {
     return <Spinner />;
   }
+
   return (
     <div className="home">
       <div className="search">

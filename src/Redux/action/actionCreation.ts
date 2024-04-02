@@ -2,15 +2,10 @@ import { Collection, INCREMENT, DECREMENT, RESET, FILTER } from './actionType';
 import {collectionList} from '../reducer/collectionList'
 import { IData } from '../reducer/collectionList';
 
-
-interface ISelectCollectionAction {
-  type: typeof Collection;
-  payload: IData[];
-}
-
 let arr=collectionList()
 
-export const selectCollection = ():ISelectCollectionAction => {
+export const selectCollection = () => {
+  console.log(1, "selection");
   return {
     type: Collection,
     payload: arr,
@@ -36,6 +31,7 @@ return {
 }
 }
 export const filter=(val:IData[])=>{
+  console.log("filter");
   return {
     type: FILTER,
     payload:val,

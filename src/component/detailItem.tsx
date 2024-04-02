@@ -18,8 +18,9 @@ export const DetailItem: React.FC = () => {
         {data
           .filter((val) => val.id === parseInt(id!))
           .map((val) => {
+            let images=val.image;
             const styles = {
-              backgroundImage: `url(${val.image})`,
+              background: `url(${images})`,
               backgroundClip: "text",
               color: "transparent",
             };

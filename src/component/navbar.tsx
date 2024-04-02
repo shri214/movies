@@ -13,7 +13,6 @@ export const Navbar: React.FC = () => {
     e.stopPropagation();
   };
  
-
   useEffect(() => {
     const func = () => {
       setVisibility(false);

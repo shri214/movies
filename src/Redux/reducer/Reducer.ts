@@ -42,7 +42,6 @@ type ActionType=ISelectCollectionAction|IIncPageNumAction|IDecPageNumAction|IRes
 export const  collectionReducer=(state:IState=initialState, action:ActionType)=>{
   switch (action.type) {
     case Collection:
-      sessionStorage.setItem('arrayOfObjects', JSON.stringify(action.payload));
       return{
         ...state, CollectionData:action.payload
       }

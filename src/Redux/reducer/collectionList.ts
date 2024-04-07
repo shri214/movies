@@ -6,6 +6,8 @@ import img5 from '../../images/abrahm ozler.jpg'
 import img6 from '../../images/godzila.jpg'
 import img7 from '../../images/output.jpg'
 import img8 from '../../images/legend hanuman 2.jpg'
+import img9 from '../../images/dehati ladke.jpg'
+import img10 from '../../images/bramhyugam.jpg'
 
 export interface IData {
     image: string;
@@ -115,6 +117,29 @@ export const collectionList=():IData[]=>{
           Cast:"Vikrant Chaturvedi, Amit Deondi, Richard Joel"
         }
       },
+      {
+        image:img9,
+        link:"https://teraboxapp.com/s/18TCdgz4eZaXSDp2NXM-wbA",
+        id:9,
+        body:{
+          description:`Rajat leaves his village for the big city to study for civil service exams. He finds freedom and love but struggles to balance relationships, family expectations and his ambitions. Rajat leaves his village for the big city to study for civil service exams`,
+          name:"Dehati Ladke season 1",
+          category:"webSeries",
+          Cast:"Kusha KapilaAasif KhanSaamya Jainn"
+        },
+      },
+      {
+        image:img10,
+        link:"https://teraboxapp.com/s/1wsu5x7WYD0ZwD7ifAxASDA",
+        id:10,
+        body:{
+          description:`Thevan, a folk singer of the Paanan caste, has a fateful encounter when escaping slavery, leading to discover an ancient tradition altering his destiny.`,
+          name:"Bramayugam (2024)",
+          category:"hindi",
+          Cast:"MammoottyArjun AshokanSidharth Bharathan"
+        },
+      },
+      
     ]
     
   return dataBase.reverse();

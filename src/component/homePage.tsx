@@ -84,15 +84,10 @@ export const HomePage: React.FC = () => {
   //use effect
 
   useEffect(() => {
-    const storedData = sessionStorage.getItem("arrayOfObjects");
-    if (storedData) {
-      const parsedData = JSON.parse(storedData);
-      console.log("data is taken by session storage", parsedData);
-      dispatch(filter(parsedData));
-    } else {
+    
       dispatch(selectCollection())
       dispatch(filter(collections.CollectionData));
-    }
+    
   }, [collections.CollectionData, dispatch]);
 
   if (collections.FilterData.length === 0) {

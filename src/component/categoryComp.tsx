@@ -13,6 +13,7 @@ export const CategoryComp: React.FC = () => {
         const data=categoryFunc(collection, val);
         dispatch(filter(data))
         dispatch(reset(1));
+        
     }
   return (
     <div className="filterContainer">
